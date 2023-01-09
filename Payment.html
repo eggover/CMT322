@@ -1,0 +1,120 @@
+<!doctype html> 
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a590290704.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> Payment | Blicious</title>
+  </head>
+
+  <!--header start-->
+  <div id="header">
+    <img src="logo.png" alt="Bilicious logo" style="width:150px; height:75px; ">
+    <div class="nav">
+      
+      <ul class="nav_link">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">FAQ</a></li>
+        
+      </ul>
+    </div>
+
+    <!--right navigation-->
+    <div id="login">
+      <button><i class="fa-regular fa-user" style="font-size: 15px;"></i>  Login</button>
+      <button ><i class="fa fa-shopping-cart" style="font-size:18px"></i></button>
+    </div>
+    <!--right nav end-->
+
+  </div>
+  <!--header end-->
+
+  <!--body starts-->
+  <body>
+    <br>
+
+    <?php include 'payment.php';?>
+    <br>
+    <div class="container">
+
+      <div id="top_button">
+        <button href="#">Pay</button>
+      </div>
+      <br>
+        <!--Summary starts-->
+        <h5 style="text-align:left;">Summary</h5>
+        <table class="summary" style="width:100%">
+          <tr>
+            <th>Total debit (RM)</th>
+            <th>Total credit (RM)</th> <!--clickable invoice file-->
+            <th>Balance</th>
+          </tr>
+
+          <tr>
+            <td>4521.00</td>
+            <td>0.00</td>
+            <td>4521.00</td>
+          
+          </tr>
+        </table>
+      <br><br>
+      
+      <!--sumary ends-->
+
+
+      <h5 style="text-align:left;">Debit</h5>
+      <table style="width:100%">
+       <tr>
+          <th>No</th>
+          <th>Reference No</th> <!--clickable invoice file-->
+          <th>Date</th>
+          <th>Details</th> 
+          <th>Debit (RM)</th>
+        </tr>
+     
+        <tr>
+          <td>1</td>
+          <td><div id="reference"><button>IN123456</button> </div></td><!--clickable receipt file-->
+          <td>11/1/2023</td>
+          <td>-invoice number- </td>
+          <td>4521.00</td>
+       </tr>
+      
+      </table>
+      <br><br>
+      <h5 style="text-align:left;">Credit</h5>
+      <table style="width:100%">
+       <tr>
+          <th>No</th>
+          <th>Reference No</th>
+          <th>Date</th>
+          <th>Details</th>
+          <th>Credit (RM)</th>
+          <th>Status</th>
+        </tr>
+
+        <tr>
+         <td>1</td>
+         <td><div id="reference"><button>IN123335</button> </div></td>
+          <td>11/1/2023</td>
+          <td>-receipt no-</td>
+          <td>4521.00</td>
+          <td> Pending </td>
+       </tr>
+      
+      </table>
+    </div>
+    
+  </body>
+  <!-- javascript source file 
+  <script src="index.js"></script>-->
+</html>
