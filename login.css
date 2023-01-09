@@ -91,7 +91,7 @@ body {
 }
 
 #bg {
-  background-image: url('img/background.jpg');
+  background-image: url('background.jpg');
   position: fixed;
   left: 0;
   top: 0;
@@ -103,7 +103,7 @@ body {
 
 body {
   margin: 0;
-  background: url('img/background.jpg') 
+  background: url('background.jpg') 
   no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -148,13 +148,13 @@ form .form-field::before {
   background-repeat: no-repeat;
 }
 form .form-field:nth-child(1)::before {
-  background-image: url(img/user-icon.png);
+  background-image: url(user-icon.png);
   width: 20px;
   height: 20px;
   top: 35px;
 }
 form .form-field:nth-child(2)::before {
-  background-image: url(img/lock-icon.png);
+  background-image: url(lock-icon.png);
   width: 16px;
   height: 16px;
   top: 40px;
