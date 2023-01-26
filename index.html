@@ -28,10 +28,6 @@
 
         </div>
 
-        <!--right navigation-->
-        
-        <!--right nav end-->
-
     </header>
     <!--header end-->
 
@@ -61,6 +57,33 @@
         <div id="container">
             <h5>hello</h5>
         </div>
+        
+        rebase services:
+
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyC1DiLEYSxz3TXK1IS2EaTp47wB4CBn8XI",
+    authDomain: "blicious-55.firebaseapp.com",
+    databaseURL: "https://blicious-55-default-rtdb.firebaseio.com",
+    projectId: "blicious-55",
+    storageBucket: "blicious-55.appspot.com",
+    messagingSenderId: "374486226069",
+    appId: "1:374486226069:web:6ad93c9f43b3e7c48f779c",
+    measurementId: "G-XXPJKVK07F"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
     </body>
 
 </html>
