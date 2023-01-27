@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Payment-user.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a590290704.js" crossorigin="anonymous"></script>
+  <title>Blicious</title>
+</head>
+
+<!--header start-->
+<header>
+  <img src="logo.png" alt="Bilicious logo" style="width:150px; height:75px; ">
+  <!--navigation bar-->
+  <div class="nav">
+
+    <br>
+    <ul class="nav_link">
+      <li><a href="#">Home</a></li>
+      <li><a href="Payment-User.html">Payment</a></li>
+      <li><a href="Ordering-User.html">Order</a></li>
+      <li><a href="#" class="fas fa-user-circle" style="font-size: 17px; padding-left: 50px;"></a></li>
+      <li><a href="#" class="fa fa-shopping-cart" style="font-size:17px; padding-left: 5px;"></a></a></li>
+
+    </ul>
+
+  </div>
+
+  <!--right navigation-->
+
+  <!--right nav end-->
+
+</header>
+<!--header end-->
+
+<body>
+  <!--slider banner starts-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="banner 1.png" alt="Announcement" class="center image">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="banner 2.png">
+
+    </div>
+
+    <div id="but">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+  </div>
+  <script src="new.js"></script>
+  <!--slider banner ends-->
+
+
+
+  <div class="container">
+
+    <!---Pay button starts-->
+    <br><br>
+    <a href="Payment-Admin.html"><button id="pay" href="">Pay</button></a>
+    
+    <br><br>
+    <!---Pay button ends-->
+
+    <!--Summary-->
+    <h4>Summary</h4><br>
+    <table style="width:80%">
+      <tr>
+        <th>Total Debit (RM)</th>
+        <th>Total Credit (RM)</th>
+        <th>Balance</th>
+      </tr>
+
+      <tr>
+        <td>4521.00</td>
+        <td>0.00</td>
+        <td>4521.00</td>
+      </tr>
+    </table><br><br>
+
+    <!--Debit-->
+    <h4>Debit</h4><br>
+    <table style="width:80%">
+      <tr>
+        <th>No</th>
+        <th>Reference No</th> <!--clickable invoice file-->
+        <th>Date</th>
+        <th>Details</th>
+        <th>Debit (RM)</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>
+          <div id="reference"><button>IN123456</button> </div>
+        </td> <!--clickable receipt file-->
+        <td>11/1/2023</td>
+        <td> 45677</td>
+        <td>2000.00</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>
+          <div id="reference"><button>IN123456</button> </div>
+        </td> <!--clickable receipt file-->
+        <td>11/2/2023</td>
+        <td> 45678</td>
+        <td>450.00</td>
+      </tr>
+
+    </table>
+    <br><br>
+    <!--Crebit-->
+    <h4>Credit</h4><br>
+    <table style="width:80%">
+      <tr>
+        <th>No</th>
+        <th>Reference No</th> <!--clickable invoice file-->
+        <th>Date</th>
+        <th>Details</th>
+        <th>Debit (RM)</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>
+          <div id="reference"><button>IN123456</button> </div>
+        </td> <!--clickable receipt file-->
+        <td>11/2/2023</td>
+        <td> 45677</td>
+        <td>2000.00</td>
+        <td>Accepted</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>
+          <div id="reference"><button>IN123456</button> </div>
+        </td> <!--clickable receipt file-->
+        <td>11/1/2023</td>
+        <td> 45678</td>
+        <td>450.00</td>
+        <td>Pending</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC1DiLEYSxz3TXK1IS2EaTp47wB4CBn8XI",
+      authDomain: "blicious-55.firebaseapp.com",
+      databaseURL: "https://blicious-55-default-rtdb.firebaseio.com",
+      projectId: "blicious-55",
+      storageBucket: "blicious-55.appspot.com",
+      messagingSenderId: "374486226069",
+      appId: "1:374486226069:web:6ad93c9f43b3e7c48f779c",
+      measurementId: "G-XXPJKVK07F"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
