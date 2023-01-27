@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="MenuAdmin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a590290704.js" crossorigin="anonymous"></script>
+    <title>Blicious</title>
+</head>
+
+<!--header start-->
+<header>
+    <img src="logo.png" alt="Bilicious logo" style="width:150px; height:75px; ">
+    <!--navigation bar-->
+    <div class="nav">
+
+        <br>
+        <ul class="nav_link">
+            <li><a href="AdminMainPage.html">Home</a></li>
+            <li><a href="Payment-Admin.html">Payment</a></li>
+            <li><a href="Ordering-User.html">Order</a></li>
+            <li><a href="login.html" class="fas fa-user-circle" style="font-size: 17px; padding-left: 50px;"></a></li>
+        </ul>
+
+    </div>
+
+    <!--right navigation-->
+
+    <!--right nav end-->
+
+</header>
+<!--header end-->
+
+<body>
+<!--slider banner starts-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="banner 1.png" alt="Announcement" class="center image">
+
+    </div>
+
+    <div class="mySlides fade">
+        <img src="banner 2.png">
+
+    </div>
+
+    <div id="but">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+</div>
+<script src="new.js"></script>
+<!--slider banner ends-->
+
+<div class="container">
+    <br>
+    <div id="container">
+        <!--product details starts-->
+        <div id="product">
+                <h4>Menu Management</h4><br>
+                <p>Click on the "Choose File" button to upload a receipt/document:</p>
+                <input type="file" id="myFile" name="filename">
+            <br><br>
+                <p>Ingredient:<input type="text" id="ingredient" name="fname"><br><br></p>
+                Price:<input type="text" id="price" name="fname"><br><br>
+        </div>
+        <br>
+
+            <!--order button starts-->
+            <div id="order">
+                <ul class="nav_link">
+                    <li><a href="" id="payment"><button>Submit</button></a></li>
+                </ul>
+            </div>
+            <!--order button ends-->
+        </div><br><br>
+        <!--product details ends-->
+
+    </div>
+</div>
+
+</body>
+
+</html>
