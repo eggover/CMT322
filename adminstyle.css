@@ -2,33 +2,14 @@
 
 * {
     outline: none;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.announcement {
-    position: relative;
-
-    color: rgb(2, 2, 2);
-    top: 0px;
-    transition: .2s;
-    z-index: 1;
-}
-
-.wrapper {
-    max-width: 1160px;
-    padding: 40px 20px;
-    margin: 0 auto;
-}
-
-.search{
-    max-width: 900px;
-    margin:auto;
-    padding: 10px;
-}
-
-li,a,button{
+li,
+a,
+button {
     font-family: "Montserrat", san-serif;
     font-weight: 500;
     font-size: 16px;
@@ -36,39 +17,49 @@ li,a,button{
     text-decoration: none;
 }
 
-#header{
-
-    background: #E6C9B2;
+header {
+    background: #ececec;
     display: flex;
     margin-top: auto;
     padding: 10px 2%;
+    justify-content: center;
 }
 
-.nav{
-
+.nav {
     margin: auto;
-    justify-content:space-between;
+    /*justify-content:space-between;*/
+    padding-left: 15px;
     align-items: center;
     padding: 10px 2%;
 }
 
-.nav_link li{
-    display:inline-block;
+.nav_link li {
+    display: inline-block;
     padding: 0px 10px
 }
 
-.nav_link li a{
+.nav_link li a {
     transition: all 0.3s ease 0s;
 
 }
 
-.nav_link li a:hover{
+.nav_link li a:hover {
     color: white;
-
 }
 
+/*
 #login{
-    padding: 30px 1%;
+    padding-top: 35PX;
+}
+*/
+#login button {
+    border: none;
+    background: none;
+}
+
+#login button:hover {
+    color: rgb(92, 92, 92);
+    transition: all 0.3s ease 0s;
 }
 
 button{
