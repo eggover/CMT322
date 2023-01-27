@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Ordering-User.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a590290704.js" crossorigin="anonymous"></script>
+  <title>Blicious</title>
+</head>
+
+<!--header start-->
+<header>
+  <img src="logo.png" alt="Bilicious logo" style="width:150px; height:75px; ">
+  <!--navigation bar-->
+  <div class="nav">
+
+    <br>
+    <ul class="nav_link">
+      <li><a href="#">Home</a></li>
+      <li><a href="Payment-User.html">Payment</a></li>
+      <li><a href="Ordering-User.html">Order</a></li>
+      <li><a href="#" class="fas fa-user-circle" style="font-size: 17px; padding-left: 50px;"></a></li>
+      <li><a href="#" class="fa fa-shopping-cart" style="font-size:17px; padding-left: 5px;"></a></a></li>
+
+    </ul>
+
+  </div>
+
+  <!--right navigation-->
+
+  <!--right nav end-->
+
+</header>
+<!--header end-->
+
+<body>
+  <!--slider banner starts-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="banner 1.png" alt="Announcement" class="center image">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="banner 2.png">
+
+    </div>
+
+    <div id="but">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+  </div>
+  <script src="new.js"></script>
+  <!--slider banner ends-->
+
+  <div class="container">
+
+    <h4>Order Confirmation</h4><br>
+
+    <table style="width:80%">
+      <tr>
+        <th>No</th>
+        <th>Client Name</th>
+        <th>Order ID</th> <!--clickable invoice file-->
+        <th>Date</th>
+        <th>Amount (RM)</th>
+        <th>Status
+        </th> <!--dropdown-->
+      </tr>
+
+
+      <tr>
+        <td>1</td>
+        <td>Woozi</td>
+        <td>
+          <div id="reference"><button>IN123456</button> </div>
+        </td> <!--clickable receipt file-->
+        <td>11/1/2023</td>
+        <td>2000.00</td>
+        <td>
+          <select name="Status" id="stat">
+            <option value="pending">Pending</option>
+            <option value="accepted">Accepted</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Jeonghan</td>
+        <td>
+          <div id="reference"><button>IN123335</button> </div>
+        </td> <!--clickable receipt file-->
+        <td>7/1/2023</td>
+        <td>1500.00</td>
+        <td>
+          <select name="Status" id="stat">
+            <option value="pending">Pending</option>
+            <option value="accepted">Accepted</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </td>
+      </tr>
+
+      </thead>
+
+
+    </table>
+  </div>
+
+</body>
+
+</html>
